@@ -13,7 +13,7 @@ export default function SubTask({
 	return (
 		<>
 			<div className="subtask">
-				<h3>{task.name}</h3>
+				<h2>{task.name}</h2>
 				<div className="progress_cont">
                     <label htmlFor={id}>{task.progress.toFixed(2)}%</label>
 					<input

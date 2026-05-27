@@ -7,7 +7,8 @@ body {
 }
 
 .progress_cont {
-    div {
+    label {
+		display: block;
         font-size: 1rem;
         padding-left: .2rem;
     }
@@ -24,6 +25,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		font-weight: 700;
 	}
 
 	.task__subtasks {
@@ -39,5 +41,9 @@ body {
 		padding: 8px 16px;
 		border-radius: 24px;
 		background-color: #bbbcff;
+
+		h2{
+			font-size: 1.4rem;
+		}
 	}
 }
