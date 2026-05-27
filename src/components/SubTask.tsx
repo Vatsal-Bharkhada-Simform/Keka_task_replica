@@ -1,3 +1,4 @@
+import { useId } from "react";
 import type { SubTask } from "../types/types";
 
 export default function SubTask({
@@ -7,12 +8,14 @@ export default function SubTask({
 	task: SubTask;
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }) {
+	const id = useId();
+
 	return (
 		<>
 			<div className="subtask">
 				<h3>{task.name}</h3>
 				<div className="progress_cont">
-                    <div>{task.progress.toFixed(2)}%</div>
+                    <label htmlFor={id}>{task.progress.toFixed(2)}%</label>
 					<input
 						className="progress"
 						type="range"
@@ -20,7 +23,7 @@ export default function SubTask({
 						max="100"
 						value={task.progress}
 						onChange={onChange}
-						id="myRange"
+						id={id}
 					/>
 				</div>
 			</div>

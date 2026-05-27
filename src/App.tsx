@@ -3,11 +3,11 @@ import { tasks } from "./utils/data";
 
 function App() {
 	return (
-		<>
+		<main>
 			{tasks.map((task, index) => {
 				return <TaskItem task={task} key={task.name + index} />;
 			})}
-		</>
+		</main>
 	);
 }
 
