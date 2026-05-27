@@ -1,0 +1,43 @@
+body {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	font-family: "DM Sans", Arial, Helvetica, sans-serif;
+}
+
+.progress_cont {
+    div {
+        font-size: 1rem;
+        padding-left: .2rem;
+    }
+
+    progress, .progress {
+        accent-color: #5355f7;
+    }
+}
+
+.task {
+	width: 30rem;
+
+	.task__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.task__subtasks {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.subtask {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 16px;
+		border-radius: 24px;
+		background-color: #bbbcff;
+	}
+}
