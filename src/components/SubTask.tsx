@@ -15,7 +15,7 @@ export default function SubTask({
 			<div className="subtask">
 				<h2>{task.name}</h2>
 				<div className="progress_cont">
-                    <label htmlFor={id}>{task.progress.toFixed(2)}%</label>
+					<label htmlFor={id}>{task.progress.toFixed(2)}%</label>
 					<input
 						className="progress"
 						type="range"
