@@ -38,7 +38,7 @@ export default function TaskItem({ task }: { task: Task }) {
 						<SubTask
 							task={item}
 							key={item.name + index}
-							onChange={handleProgressChange.bind(null, index)}
+							onChange={(arg) => handleProgressChange(index, arg)}
 						/>
 					);
 				})}
